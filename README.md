@@ -1,2 +1,11 @@
-# homebrew-tap
-☕ A tap for developers who’d rather let AI write their PR reviews while they grab another coffee.
+# 🍺 AIMR Homebrew Tap
+
+Homebrew tap for installing AIMR — the AI-assisted Git review CLI.
+
+---
+
+## 🧩 Install
+
+```bash
+brew tap centrium/tap
+brew install --cask aimr
