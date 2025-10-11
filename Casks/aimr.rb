@@ -2,7 +2,7 @@
 cask "aimr" do
   name "aimr"
   desc "AI-assisted Git MR/PR analysis and commit generator"
-  homepage "https://github.com/centrium/aimr"
+  homepage "https://github.com/centrium/aimr-releases"
   version "0.1.0"
 
   livecheck do
@@ -13,23 +13,23 @@ cask "aimr" do
 
   on_macos do
     on_intel do
-      url "https://github.com/centrium/aimr/releases/download/v#{version}/aimr_#{version}_macOS_amd64.tar.gz"
-      sha256 "3fc7a09f21d39e413232ae1cf368601536da9192f2fd917007a9f78d2f44cbd0"
+      url "https://github.com/centrium/aimr-releases/releases/download/v#{version}/aimr_#{version}_macOS_amd64.tar.gz"
+      sha256 "9a4548148f04ac61ae9be48854f687f4248397aee315ff973374e07443cfc97a"
     end
     on_arm do
-      url "https://github.com/centrium/aimr/releases/download/v#{version}/aimr_#{version}_macOS_arm64.tar.gz"
-      sha256 "b51042604303fddb28f578a805acc1fa55a495b35cea3772d6a2200bb80ad4fc"
+      url "https://github.com/centrium/aimr-releases/releases/download/v#{version}/aimr_#{version}_macOS_arm64.tar.gz"
+      sha256 "4e93ba087316a18f50fc022a1af4a31861270f89aad9e988e4f414738290a940"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/centrium/aimr/releases/download/v#{version}/aimr_#{version}_linux_amd64.tar.gz"
-      sha256 "2434f3eb2819a395b3a87ac1985c1818376bd70661151df7daf9ff793d2a47dc"
+      url "https://github.com/centrium/aimr-releases/releases/download/v#{version}/aimr_#{version}_linux_amd64.tar.gz"
+      sha256 "cf472b2782ccfb61cbd31f5eb33514178bdaf5b1827877c86dea570074d7b21c"
     end
     on_arm do
-      url "https://github.com/centrium/aimr/releases/download/v#{version}/aimr_#{version}_linux_arm64.tar.gz"
-      sha256 "107fe12caa36d406699e15e18ae3723d1f4701c365020774e8ddbca4d93b5b58"
+      url "https://github.com/centrium/aimr-releases/releases/download/v#{version}/aimr_#{version}_linux_arm64.tar.gz"
+      sha256 "964c3dd369869a05e55e2a7eff4aa3f9c4cdb3a757e318e4dd8c70935bbcea76"
     end
   end
 
