@@ -3,34 +3,41 @@ cask "aimr" do
   name "aimr"
   desc "AI-assisted Git MR/PR analysis and commit generator"
   homepage "https://github.com/centrium/aimr-releases"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "aimr"
+  bash_completion "completions/goreleaser.bash"
+  zsh_completion "completions/goreleaser.zsh"
+  fish_completion "completions/goreleaser.fish"
 
   on_macos do
     on_intel do
       url "https://github.com/centrium/aimr-releases/releases/download/v#{version}/aimr_#{version}_macOS_amd64.tar.gz"
-      sha256 "9a4548148f04ac61ae9be48854f687f4248397aee315ff973374e07443cfc97a"
+      sha256 "371f2b604431d9868105e2a61dfc0e4a594f42b51da521a8b48786dfde036203"
     end
     on_arm do
       url "https://github.com/centrium/aimr-releases/releases/download/v#{version}/aimr_#{version}_macOS_arm64.tar.gz"
-      sha256 "4e93ba087316a18f50fc022a1af4a31861270f89aad9e988e4f414738290a940"
+      sha256 "e54ec5e68980b695317c7dc5b31442e3bb222ad24ee7a403be4d8d69820630b3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/centrium/aimr-releases/releases/download/v#{version}/aimr_#{version}_linux_amd64.tar.gz"
-      sha256 "cf472b2782ccfb61cbd31f5eb33514178bdaf5b1827877c86dea570074d7b21c"
+      sha256 "06dd652df58cbe340fcb26e0b17b54f304b825b7eb13205213664991eabf2c8e"
     end
     on_arm do
       url "https://github.com/centrium/aimr-releases/releases/download/v#{version}/aimr_#{version}_linux_arm64.tar.gz"
-      sha256 "964c3dd369869a05e55e2a7eff4aa3f9c4cdb3a757e318e4dd8c70935bbcea76"
+      sha256 "5a5b6a27c464c78498a6b18b967ae1084103e7cebb8a836f54805c31e67bd557"
     end
+  end
+
+  postflight do
+    bin.install "aimr"
   end
 
   # No zap stanza required
