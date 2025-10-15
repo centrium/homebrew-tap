@@ -5,21 +5,21 @@
 class Aimr < Formula
   desc "AI-assisted Git MR/PR analysis and commit generator"
   homepage "https://github.com/centrium/aimr-releases"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/centrium/aimr-releases/releases/download/v0.1.3/aimr_0.1.3_macOS_amd64.tar.gz"
-      sha256 "7629d922bfb7c271ff33627d30b67d9f2b3ee16da3f2b413b7538575da6d2583"
+      url "https://github.com/centrium/aimr-releases/releases/download/v0.2.0/aimr_0.2.0_macOS_amd64.tar.gz"
+      sha256 "7b17ab6e5bbdcdd0b171b67d34d73668b8aa854b2f60ea79550a1d1f2df500b9"
 
       def install
         bin.install "aimr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/centrium/aimr-releases/releases/download/v0.1.3/aimr_0.1.3_macOS_arm64.tar.gz"
-      sha256 "3651c2e58cf53b9b58a1647139eb760bfb470018f1cf03ccba413d211367cd97"
+      url "https://github.com/centrium/aimr-releases/releases/download/v0.2.0/aimr_0.2.0_macOS_arm64.tar.gz"
+      sha256 "554ac0525d6cba4e2aa07e87000c31cf91aa02560bdc71c3dc654970e4382d6f"
 
       def install
         bin.install "aimr"
@@ -29,15 +29,15 @@ class Aimr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/centrium/aimr-releases/releases/download/v0.1.3/aimr_0.1.3_linux_amd64.tar.gz"
-      sha256 "42174b8e2e08dff3564fbc2d0a6f36641e4730f1c768a672b694ccbc716bb439"
+      url "https://github.com/centrium/aimr-releases/releases/download/v0.2.0/aimr_0.2.0_linux_amd64.tar.gz"
+      sha256 "a0753fb808b9689f6f677bfba75b4c636758c6c6d03d41d3b4543b6ec5d406bb"
       def install
         bin.install "aimr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/centrium/aimr-releases/releases/download/v0.1.3/aimr_0.1.3_linux_arm64.tar.gz"
-      sha256 "2ac0a2a72c42df62b04908ffa1ca578f6c78b0c746e4e1e73cd54deb88b2e17a"
+      url "https://github.com/centrium/aimr-releases/releases/download/v0.2.0/aimr_0.2.0_linux_arm64.tar.gz"
+      sha256 "7a8bd334190f2eafed2bd6a7b333be42827956b3e08e4c77255c64c3b5b3980c"
       def install
         bin.install "aimr"
       end
